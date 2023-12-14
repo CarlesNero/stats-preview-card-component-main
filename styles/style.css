@@ -1,0 +1,117 @@
+:root{
+
+--VeryDarkBlue:hsl(233, 47%, 7%); 
+--DarkSaturatedBlue:hsl(244, 38%, 16%); 
+--SoftViolet:hsl(277, 64%, 61%); 
+--White-color: hsl(0, 0%, 100%); 
+--SlightlyTransparentWhite:hsla(0, 0%, 100%, 0.75); 
+--SlightlyTransparentWhite-2:hsla(0, 0%, 100%, 0.6); 
+
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    color: var(--White-color);
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background: var(--VeryDarkBlue);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    margin: 5rem auto;
+    width: 90%;
+    background-color: var(--DarkSaturatedBlue);
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero{
+
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 15rem;
+}
+
+
+ .imagen{
+    background-image: url("../images/image-header-mobile.jpg");
+    width: 100%;
+    height: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: absolute;
+}
+
+.pantalla{
+    background-color: var(--SoftViolet);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    position: absolute;
+}
+
+section{
+    text-align: center;
+    margin: 10% 5%;
+}
+
+.texto{
+    margin-bottom: 10%;
+
+}
+
+.logros p{
+ text-transform: uppercase;
+ font-size: 12px;
+ letter-spacing: 3px;
+}
+
+.sectionTyL{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.logros-item{
+    gap: .4rem;
+}
+
+span{
+    color: var(--SoftViolet);
+}
+
+p{
+    font-weight: 400;
+    color: var(--SlightlyTransparentWhite-2);
+}
+
+
+@media (min-width: 1000px) {
+ main{
+    flex-direction: row-reverse;
+    width: 70%;
+    height: 50vh;
+ }
+
+ .hero{
+   height: 100%;
+ }
+
+ .logros{
+    justify-content: center;
+    flex-direction: row;
+ }
+  }
