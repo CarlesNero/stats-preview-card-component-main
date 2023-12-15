@@ -114,4 +114,8 @@ p{
     justify-content: center;
     flex-direction: row;
  }
+
+ .imagen{
+    background-image: url("../images/image-header-desktop.jpg");
+ }
   }
